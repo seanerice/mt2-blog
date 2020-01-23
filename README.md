@@ -10,7 +10,8 @@ My project updates will live here.
 
 ### Progress
 - Papers!
-    - [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=903641) describing pose classification using RBF (radial basis function) neural networks to classify hand gestures
+    - [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=903641) describes pose classification using RBF (radial basis function) neural networks to classify hand gestures
+    - [Paper](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/42237.pdf) describes Google's pose tracking method using Tensorflow's DNN (deep neural network) classifiers.
     
 ### What's slowing me down
 - Lingering cough
