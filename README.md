@@ -5,7 +5,7 @@ My project updates will live here.
 I want to pick up where I left off in MTI -- build an interactive piece using pose tracking and classification. This will likely involve building a custom RNN along with creating lots of _good_ training data.
 
 ### Progress
-- Create GitHub page @ [github page](www.seanerice.github.io/mt2-blog/)
+- Create GitHub page @ [github page](seanerice.github.io/mt2-blog/)
 
 ### What's slowing me down
 - Sickness :(
