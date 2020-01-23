@@ -1,2 +1,3 @@
-# mt2-blog
-mt2-blog
+# Music and Tech 2 Blog
+:)
+
