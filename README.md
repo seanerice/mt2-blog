@@ -1,6 +1,9 @@
 # Music and Tech 2 Blog
 My project updates will live here.
 
+## Week of 2.3.2020
+Let's get this bread.
+
 ## Week of 1.27.2020
 No progress.
 
