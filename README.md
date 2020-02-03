@@ -1,9 +1,26 @@
 # Music and Tech 2 Blog
 My project updates will live here.
 
+## Week of 1.27.2020
+No progress.
+
+### Planning
+- Leverage Pytorch ML library
+    - Dynamic models are easy to put together (as opposed to static graph workflow in Tensor Flow).
+    - LSTM model for classifying sequence data.
+- Gather training data
+    - Record pose data (output) from Google's DeepPose net
+    - Webcam and subject should be in optimal lighting positions
+    - Dozen or so examples for each classification
+- "Normalize" training data
+    - Minimum/maximum sequence length
+- Parameterize voices in piece
+    - Important to abstract audio logic for "simple" gesture control
+    - I have a vision of a choral voice which can be controlled through dramatic gesturing. It will probably have parameters like pitch, volume, and layers (which changes the number of voices). 
+
 ## Week of 1.20.2020
 
-### Ideas
+### Planning
 - Parameterize voices in piece
     - Important to abstract audio logic for "simple" gesture control
     - I have a vision of a choral voice which can be controlled through dramatic gesturing. It will probably have parameters like pitch, volume, and layers (which changes the number of voices). 
