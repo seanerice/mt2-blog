@@ -1,11 +1,22 @@
 # Music and Tech 2 Blog
 My project updates will live here.
 
+## Week of 2.10.2020
+
+### Planning
+- Gather training data
+    - Record pose data (output 17 dimensional vector)
+    - Annotate each point with class label
+
 ## Week of 2.3.2020
-Let's get this bread.
+    
+### Progress
+- Implemented LSTM classifier
+    - Input: sequence of 17-dimension vectors (N x 17)
+    - Output: Class probabilities (C dim vector)
+- Created toy data for LSTM to test implementation
 
 ## Week of 1.27.2020
-No progress.
 
 ### Planning
 - Leverage Pytorch ML library
