@@ -1,5 +1,7 @@
 # Music and Tech 2 Blog
-My project updates will live here.
+The purpose of this 'blog' is to track the progress of my PoseNet based gesture classifier and audio engine.
+
+Checkout my project at https://github.com/seanerice/chuck-sta-pose
 
 # Week of 2.10.2020
 
