@@ -3,10 +3,17 @@ My project updates will live here.
 
 # Week of 2.10.2020
 
-### Planning
+### To-Do This Week
 - Gather training data
-    - Record pose data (output 17 dimensional vector)
+    - Set up webcam with [PoseNetOSC](https://github.com/tommymitch/posenetosc)
+    - Record raw pose data (output 17 dimensional vector)
     - Annotate each point with class label
+    
+### Ideas
+- Consider preprocessing pose data
+    - (x, y) coordinates in range 0.0 - 1.0
+    - Convert (x, y) coordinates from screen space to local space.
+        - Point position is relative to 'root' bone
 
 # Week of 2.3.2020
     
