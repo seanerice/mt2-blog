@@ -7,15 +7,46 @@ Checkout my project at https://github.com/seanerice/chuck-sta-pose
 
 ### To-Do This Week
 - Gather training data
-    - Set up webcam with [PoseNetOSC](https://github.com/tommymitch/posenetosc)
-    - Record raw pose data (output 17 dimensional vector)
-    - Annotate each point with class label
+    - [x] Set up webcam with [PoseNetOSC](https://github.com/tommymitch/posenetosc)
+    - [x] Create data writer for posenetosc
+    - [ ] Record raw pose data (output 17x2 dimensional vector)
+    - [ ] ~~Annotate each point with class label data.~~
     
 ### Ideas
 - Consider preprocessing pose data
+    - replace -1 values with last known position
     - (x, y) coordinates in range 0.0 - 1.0
     - Convert (x, y) coordinates from screen space to local space.
         - Point position is relative to 'root' bone
+- Two neural nets
+    - NN for parameters
+    - LSTM for gesture classification
+
+### To-Do Next Week
+- Gather more training data
+    - [ ] Create data annotation tools
+        1. Load data point from file
+        2. Render points on screen
+        3. Label points with parameter data (i.e. r_arm: 0.3)
+        - OpenCV and command line?
+    - [ ] Record pose data
+        - raise each arm
+        - lower each arm
+        - open arms
+        - close arms
+        - point to different areas off camera
+    - [ ] Annotate pose data with gesture class label and parameters
+        - Parameters:
+            - `r_hand_ht`, `l_hand_ht`
+            - `r_pointed_to`
+            - `l_pointed_to`
+        - Classes:
+            - `arm_raise`, `arm_lower`
+            - `arm_close`, `arm_open`
+            - `point_l`, `point_r`
+            
+### Thoughts
+I'm curious to see how feasible it will be to annotate the training data.
 
 # Week of 2.3.2020
     
