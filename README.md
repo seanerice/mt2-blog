@@ -41,12 +41,12 @@ Checkout my project at https://github.com/seanerice/chuck-sta-pose
             - `r_pointed_to`
             - `l_pointed_to`
         - Classes:
-            - `arm_raise`, `arm_lower`
-            - `arm_close`, `arm_open`
-            - `point_l`, `point_r`
+            - `b_arm_lower`, `r/l_arm_raise`, `r/l_arm_lower`
+            - `arms_close`, `arms_open`
+            - `point_l`, `point_r`, `point_both`
             
 ### Thoughts
-I'm curious to see how feasible it will be to annotate the training data.
+I'm worried about the feasibility of annotating data, however well annotated data is useful for training.
 
 # Week of 2.3.2020
     
