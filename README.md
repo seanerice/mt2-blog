@@ -3,6 +3,70 @@ The purpose of this 'blog' is to track the progress of my PoseNet based gesture 
 
 Checkout my project at https://github.com/seanerice/chuck-sta-pose
 
+# Week of 2.17.2020
+
+### What's going on?
+Last week I remebered I had no way of labeling training data. Neural networks are really good at learning an output from a given input. In unsupervised learning, an ML model gradually learns what features produce what output after showing it numerous (input, output) pairs. In my case I have a lot of input and no output, so I can't train my network!!! Through the process of __data annotation__, however, I can create output data which represents the outputs I want the network to learn. 
+
+### Creating training data
+I have a thousands of training data which needs to be labeled. The hardest method (and most fine-grain) involves going through each point one-by-one and creating annotations. I can speed up class annotation when I label ranges of data as one class. For example, if my right arm is moving up over a period of time, I can label that region of data with r_arm_raise. Similarly, with parameter data, my arm may start at a height of 0.3 and stop at height 0.8; it's just a matter of interpoating between those points. Using this annotation model I can significantly speed up data annotation. Now I just have to build it.
+
+### Data annotation tool
+I want to use Unity3D to quickly build an annotation tool. I believe this is feasible within a one-week timeframe. Here's the deliverables:
+- Load data from file, store in a buffer
+- Interactive 'read-head' which displays one point in time
+    - Slider moves time forwards and backwards
+    - Arrow keys or on-screen keys for frame-by-frame precision
+- Parameter annotation
+    ```
+    {
+        name: string with no spaces or special characters
+        start: integer >= 0
+        end: integer < number of data points
+        low: float in [0.0-1.0]
+        high: float in [0.0-1.0]
+        method: optional, string, default 'linear' 
+    }
+    ```
+- Class annotation
+    ```
+    {
+        name: string with no spaces or special characters
+        start: integer >= 0
+        end: integer < number of data points
+    }
+    ```
+- Place start and stop points to annotate a range of data
+- Can add more than one annotation at a time
+- Export annotations to file
+
+### Ideas
+The annotation tool could become a spring-board for a visualizer which does interesting things with the data. Maybe I could extrude the 2d point data into the time dimension for a cool slithery stickman-snake. Maybe I can plot one dimension of data against time and annotate that way.
+
+
+### To-Do This Week
+- [ ] Create data annotation tools
+    1. Load data point from file
+    2. Render points on screen
+    3. Label points with parameter data (i.e. r_arm: 0.3)
+    - ~OpenCV and command line?~
+    - Unity3D
+- [ ] Record pose data
+    - raise each arm
+    - lower each arm
+    - open arms
+    - close arms
+    - point to different areas off camera
+- [ ] Annotate pose data with gesture class label and parameters
+    - [ ] Parameters:
+        - `r_hand_ht`, `l_hand_ht`
+        - `r_pointed_to`
+        - `l_pointed_to`
+    - [ ] Classes:
+        - `b_arm_lower`, `r/l_arm_raise`, `r/l_arm_lower`
+        - `arms_close`, `arms_open`
+        - `point_l`, `point_r`, `point_both`
+
 # Week of 2.10.2020
 
 ### To-Do This Week
@@ -23,27 +87,9 @@ Checkout my project at https://github.com/seanerice/chuck-sta-pose
     - LSTM for gesture classification
 
 ### To-Do Next Week
-- Gather more training data
-    - [ ] Create data annotation tools
-        1. Load data point from file
-        2. Render points on screen
-        3. Label points with parameter data (i.e. r_arm: 0.3)
-        - OpenCV and command line?
-    - [ ] Record pose data
-        - raise each arm
-        - lower each arm
-        - open arms
-        - close arms
-        - point to different areas off camera
-    - [ ] Annotate pose data with gesture class label and parameters
-        - Parameters:
-            - `r_hand_ht`, `l_hand_ht`
-            - `r_pointed_to`
-            - `l_pointed_to`
-        - Classes:
-            - `b_arm_lower`, `r/l_arm_raise`, `r/l_arm_lower`
-            - `arms_close`, `arms_open`
-            - `point_l`, `point_r`, `point_both`
+- Create data annotation tools
+- Record pose data
+- Annotate pose data with gesture class label and parameters
             
 ### Thoughts
 I'm worried about the feasibility of annotating data, however well annotated data is useful for training.
