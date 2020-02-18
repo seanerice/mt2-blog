@@ -43,6 +43,7 @@ I want to use Unity3D to quickly build an annotation tool. I believe this is fea
 ### Ideas
 The annotation tool could become a spring-board for a visualizer which does interesting things with the data. Maybe I could extrude the 2d point data into the time dimension for a cool slithery stickman-snake. Maybe I can plot one dimension of data against time and annotate that way.
 
+- Add 'hold-out' variable to each point; whether or not to ignore the data point.
 
 ### To-Do This Week
 - [ ] Create data annotation tools
