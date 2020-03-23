@@ -3,6 +3,32 @@ The purpose of this 'blog' is to track the progress of my PoseNet based gesture 
 
 Checkout my project at https://github.com/seanerice/chuck-sta-pose
 
+# Week of 3.23.2020
+
+### What's going on?
+
+Spring break is over and I rested and relaxed as much as I could which means I have no progress to report. Currently my LSTM won't train, which is a bit disconcerting, however I'm confident it is fixable.
+
+### To-do this week
+
+Figure out why my LSTM isn't training. :(
+
+# Week of 3.2.2020
+
+### What's going on?
+Over the last two weeks I have worked towards getting a trained model working, but I've had a few difficulties getting the LSTM model to train on my pet train set. This may be due to a lack of understanding on my part as far as feeding the data to the model.
+
+### To-do for the coming weeks
+
+- [ ] Train and test LSTM on small dataset
+- [ ] Integrate LSTM with ChucK scripts and test audio control
+
+# Week of 2.24.2020
+
+### Progess
+
+Created annotation tool according to last weeks specs.
+
 # Week of 2.17.2020
 
 ### What's going on?
