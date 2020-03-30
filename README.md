@@ -15,6 +15,8 @@ Optimize for pose-data:
 - Find optimal parameters
 - Consider convolution before LSTM for positional invariance
 
+Take a short video of classification.
+
 ### For the future
 
 Train a model:
