@@ -15,6 +15,19 @@ Optimize for pose-data:
 - Find optimal parameters
 - Consider convolution before LSTM for positional invariance
 
+### For the future
+
+Train a model:
+- More data!
+- Save it!!!
+
+Hook into ChucK:
+- OSC sender
+
+Test it (oh lord let it be good)
+
+Design a short piece to showcase gesture control.
+
 # Week of 3.23.2020
 
 ### What's going on?
