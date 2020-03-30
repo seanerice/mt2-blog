@@ -7,7 +7,7 @@ Checkout my project at https://github.com/seanerice/chuck-sta-pose
 
 ### What's going on?
 
-I made a little progress; after hours of trial and error, I finally found the right implementation to get good initial results. Currently the model has an _okay_ test accuracy with some pet data, now I need to tweek the model to work well with the stream data.
+I made a little progress; after hours of trial and error, I finally found the right implementation to get initial results. Currently the model has an _okay_ test accuracy with some pet data, now I need to tweek the model to work well with the stream data.
 
 ### To-do this week
 
