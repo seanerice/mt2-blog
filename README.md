@@ -3,11 +3,30 @@ The purpose of this 'blog' is to track the progress of my PoseNet based gesture 
 
 Checkout my project at https://github.com/seanerice/chuck-sta-pose
 
+# Week of 4.6.2020
+
+### What's going on?
+
+Currently, the gesture classifier will not train despite my best efforts. Unfortunately, I will have to back-burner this feature and move on to other things, namely __pose parameterization__. This should work a 
+
+Here's my progress so far with parameterization of my right arm's height.
+
+![](https://github.com/seanerice/chuck-sta-pose/blob/master/Screencast-from-04-06-2020-09_55_17-AM.gif).
+
+This is cool, though somewhat limited. I need to implement some other mechanism to switch contexts since my gesture classification isn't working (a context may allow me to switch control between multiple voices). This will have to be something simple, but it has to be robust enough to work well. For example, I could track horizontal velocity of my hand to detect a swipe. 
+
+I believe after this week, I can focus on creating the piece and tweaking the model.
+
+### To-do this week
+
+- [ ] jitter smoothing
+- [ ] implement other parameters
+
 # Week of 3.30.2020
 
 ### What's going on?
 
-I made a little progress; after hours of trial and error, I finally found the right implementation to get initial results. Currently the model has an _okay_ test accuracy with some pet data, now I need to tweek the model to work well with the stream data.
+I made a little progress; after hours of trial and error, I finally found the right implementation to get initial results. Currently the model has an _okay_ test accuracy with some pet data, now I need to tweak the model to work well with the stream data.
 
 ### To-do this week
 
